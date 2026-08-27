@@ -44,25 +44,21 @@ enableRobotsTXT = true
     name = "Home"
     url = "/"
     weight = 1
-
   [[menu.main]]
     identifier = "chi-sono"
     name = "Chi sono"
     url = "/chi-sono/"
     weight = 2
-
   [[menu.main]]
     identifier = "servizi"
     name = "Servizi"
     url = "/servizi/"
     weight = 3
-
   [[menu.main]]
     identifier = "articoli"
     name = "Articoli"
     url = "/articoli/"
     weight = 4
-
   [[menu.main]]
     identifier = "contatti"
     name = "Contatti"
@@ -73,8 +69,6 @@ enableRobotsTXT = true
   [languages.it]
     languageName = "Italiano"
     weight = 1
-    [languages.it.params]
-      subtitle = "Consulenza e assistenza legale a Udine"
 
 [markup]
   [markup.goldmark]
