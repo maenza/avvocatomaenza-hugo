@@ -16,5 +16,8 @@ Thumbs.db
 node_modules/
 package-lock.json
 
-# Theme submodule
+# Theme
 !themes/PaperMod
+
+# Debug
+*.log
