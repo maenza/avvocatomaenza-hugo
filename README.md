@@ -7,46 +7,24 @@ Sito web statico generato con [Hugo](https://gohugo.io/) per lo Studio Legale Ma
 - Tema: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 - Hosting: GitHub Pages
 - Lingua: Italiano
+- Stato: Tema caricato manualmente
 
 ## Struttura
 ```
 .
-├── config.toml          # Configurazione
-├── content/             # Contenuti
-│   ├── _index.md        # Homepage
-│   ├── chi-sono.md      # Chi sono
-│   ├── servizi.md       # Servizi
-│   ├── articoli/        # Blog
-│   │   └── *.md         # Articoli
-│   └── contatti.md      # Contatti
-├── static/              # File statici
-│   └── images/          # Immagini
-└── themes/              # Temi
-    └── PaperMod/        # Tema (submodule)
+├── config.toml
+├── content/
+│   ├── _index.md
+│   ├── chi-sono.md
+│   ├── servizi.md
+│   ├── articoli/
+│   │   └── *.md
+│   └── contatti.md
+├── static/
+│   └── images/
+└── themes/
+    └── PaperMod/
 ```
 
-## Come iniziare
-
-### 1. Aggiungi il tema PaperMod
-```bash
-git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
-git submodule update --init --recursive
-git add .gitmodules themes/PaperMod
-git commit -m "Add PaperMod theme"
-git push origin main
-```
-
-### 2. Testa localmente
-```bash
-hugo server -D
-```
-
-Il sito sarà accessibile all'indirizzo: [http://localhost:1313](http://localhost:1313)
-
-## Deploy
-Il sito si deploya automaticamente su GitHub Pages al push sul branch main.
-
-## Personalizzazione
-- Modifica i file in `content/` per aggiungere contenuti
-- Modifica `config.toml` per personalizzare il sito
-- Aggiungi immagini in `static/images/`
+## Sito online
+[https://maenza.github.io/avvocatomaenza-hugo/](https://maenza.github.io/avvocatomaenza-hugo/)
