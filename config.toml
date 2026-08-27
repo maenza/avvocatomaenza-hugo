@@ -1,56 +1,13 @@
-baseURL = "https://maenza.github.io/avvocatomaenza-hugo"
-title = "Studio Legale Maenza"
-languageCode = "it-IT"
-defaultContentLanguage = "it"
+baseURL = "https://www.avvocatomaenza.it/"
+languageCode = "it-it"
+title = "Avvocato Massimiliano Maenza"
 theme = "PaperMod"
-paginate = 10
-enableRobotsTXT = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+publishDir = "public"
 
 [params]
-  env = "development"
-  title = "Studio Legale Maenza"
-  description = "Consulenza e assistenza legale a Udine"
-  author = "Avv. Massimiliano Maenza"
   defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowToc = true
 
-[params.profileMode]
-  enabled = true
-  title = "Studio Legale Maenza"
-  subtitle = "Consulenza e assistenza legale a Udine"
-
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "chi-sono"
-    name = "Chi sono"
-    url = "/chi-sono/"
-    weight = 2
-  [[menu.main]]
-    identifier = "servizi"
-    name = "Servizi"
-    url = "/servizi/"
-    weight = 3
-  [[menu.main]]
-    identifier = "articoli"
-    name = "Articoli"
-    url = "/articoli/"
-    weight = 4
-  [[menu.main]]
-    identifier = "contatti"
-    name = "Contatti"
-    url = "/contatti/"
-    weight = 5
-
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
