@@ -7,24 +7,13 @@ Sito web statico generato con [Hugo](https://gohugo.io/) per lo Studio Legale Ma
 - Tema: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 - Hosting: GitHub Pages
 - Lingua: Italiano
-- Stato: Tema caricato manualmente
+- Stato: Debugging deploy in corso
 
 ## Struttura
-```
-.
-├── config.toml
-├── content/
-│   ├── _index.md
-│   ├── chi-sono.md
-│   ├── servizi.md
-│   ├── articoli/
-│   │   └── *.md
-│   └── contatti.md
-├── static/
-│   └── images/
-└── themes/
-    └── PaperMod/
-```
 
 ## Sito online
 [https://maenza.github.io/avvocatomaenza-hugo/](https://maenza.github.io/avvocatomaenza-hugo/)
+
+## Note
+- Workflow aggiornato con debugging
+- Ultimo aggiornamento: 27 agosto 2026
