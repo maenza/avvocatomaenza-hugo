@@ -2,34 +2,37 @@ name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - master
   pull_request:
-    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          submodules: false
-          fetch-depth: 0
+        uses: actions/checkout@v7
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.146.0'
           extended: true
 
       - name: Build Hugo site
-        run: hugo --minify --baseURL "https://maenza.github.io/avvocatomaenza-hugo/" --verbose
+        run: hugo --minify
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy Hugo site'
+          publish_branch: gh-pages
+          keep_files: false
+          force_orphan: true
