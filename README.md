@@ -4,11 +4,13 @@
 - Rimosso file index.html errato
 - Corretto baseURL
 - Corretto shortcode syntax
-- **FIX CRITICO: Hugo versione aggiornata a 0.146.0+** (PaperMod richiede min. 0.146.0)
+- Aggiornato Hugo a 0.146.0+
+- **FIX: env=development per disabilitare template di produzione (PaperMod issue #1719)**
 - Aggiunto avatar placeholder
 
 ## Sito online
 [https://maenza.github.io/avvocatomaenza-hugo/](https://maenza.github.io/avvocatomaenza-hugo/)
 
-## Ultimo aggiornamento
-27 agosto 2026 - Hugo 0.146.0
+## Riferimenti
+- [PaperMod Issue #1719](https://github.com/adityatelange/hugo-PaperMod/issues/1719)
+- [PaperMod Issue #1820](https://github.com/adityatelange/hugo-PaperMod/issues/1820)
