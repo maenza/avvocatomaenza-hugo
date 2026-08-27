@@ -11,10 +11,6 @@ layout: "list"
 
 In questa sezione pubblichiamo articoli, approfondimenti e commenti su tematiche giuridiche di attualità.
 
-## Ultimi articoli
-
-{{< list "posts" >}}
-
 ## Categorie
 - [Compravendita](/categories/compravendita/)
 - [Comproprietà](/categories/comproprieta/)
