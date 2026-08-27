@@ -10,7 +10,7 @@ enableRobotsTXT = true
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  env = "production"
+  env = "development"
   title = "Studio Legale Maenza"
   description = "Consulenza e assistenza legale a Udine"
   author = "Avv. Massimiliano Maenza"
