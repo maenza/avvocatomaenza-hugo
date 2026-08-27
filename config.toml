@@ -1,0 +1,82 @@
+baseURL = "https://maenza.github.io/avvocatomaenza-hugo/"
+title = "Studio Legale Maenza"
+languageCode = "it-IT"
+defaultContentLanguage = "it"
+theme = "PaperMod"
+paginate = 10
+enableRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  title = "Studio Legale Maenza"
+  description = "Consulenza e assistenza legale a Udine - Diritto civile, diritto di famiglia e volontaria giurisdizione"
+  author = "Avv. Massimiliano Maenza"
+  googleAnalytics = ""
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  comments = false
+
+[params.profileMode]
+  enabled = true
+  title = "Studio Legale Maenza"
+  subtitle = "Consulenza e assistenza legale a Udine"
+  imageUrl = "/images/avatar.jpg"
+  imageTitle = "Avv. Massimiliano Maenza"
+
+[params.social]
+  [[params.social.icons]]
+    name = "email"
+    url = "mailto:info@avvocatomaenza.it"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "chi-sono"
+    name = "Chi sono"
+    url = "/chi-sono/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "servizi"
+    name = "Servizi"
+    url = "/servizi/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "articoli"
+    name = "Articoli"
+    url = "/articoli/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "contatti"
+    name = "Contatti"
+    url = "/contatti/"
+    weight = 5
+
+[languages]
+  [languages.it]
+    languageName = "Italiano"
+    weight = 1
+    [languages.it.params]
+      subtitle = "Consulenza e assistenza legale a Udine"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
