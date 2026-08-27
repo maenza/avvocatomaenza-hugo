@@ -1,16 +1,14 @@
 # Studio Legale Maenza - Sito Hugo
 
-Sito web statico generato con [Hugo](https://gohugo.io/) per lo Studio Legale Maenza.
-
 ## Fix applicati
-- Rimosso file index.html errato da themes/PaperMod/layouts/
-- Corretto baseURL (rimosso trailing slash)
-- Corretto shortcode syntax in homepage e articoli
-- Aggiornato workflow: Hugo 0.125.0, submodules disabilitati
+- Rimosso file index.html errato
+- Corretto baseURL
+- Corretto shortcode syntax
+- **FIX CRITICO: Hugo versione aggiornata a 0.146.0+** (PaperMod richiede min. 0.146.0)
 - Aggiunto avatar placeholder
 
 ## Sito online
 [https://maenza.github.io/avvocatomaenza-hugo/](https://maenza.github.io/avvocatomaenza-hugo/)
 
 ## Ultimo aggiornamento
-27 agosto 2026 - Workflow aggiornato
+27 agosto 2026 - Hugo 0.146.0
