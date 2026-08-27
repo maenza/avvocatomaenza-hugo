@@ -16,14 +16,28 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Debug - List files
+        run: |
+          echo "=== Repository structure ==="
+          ls -la
+          echo "=== Themes ==="
+          ls -la themes/
+          echo "=== PaperMod ==="
+          ls -la themes/PaperMod/ || echo "PaperMod not found"
+          echo "=== Layouts ==="
+          ls -la themes/PaperMod/layouts/ || echo "layouts not found"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
 
+      - name: Debug - Hugo version
+        run: hugo version
+
       - name: Build Hugo site
-        run: hugo --minify --baseURL "https://maenza.github.io/avvocatomaenza-hugo/"
+        run: hugo --minify --baseURL "https://maenza.github.io/avvocatomaenza-hugo/" --verbose
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
